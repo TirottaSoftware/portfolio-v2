@@ -25,3 +25,13 @@ window.addEventListener("scroll", () =>{
         sidebar.classList.remove("text-black");
     }
 })
+
+//PROJECTS-MODAL CLICK EVENT HANDLER
+
+var modalButton = document.querySelector("#link-more-btn");
+var modal = document.querySelector(".projects-modal");
+
+
+modalButton.addEventListener("click", () => {
+    modal.classList.toggle("modal-hidden");
+})

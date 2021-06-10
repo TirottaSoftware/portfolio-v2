@@ -243,7 +243,7 @@ nav{
     display:flex;
     width: 80%;
     margin-top:3%;
-    padding: 0 10% 10% 10%;
+    padding: 0 10% 0 10%;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -287,6 +287,65 @@ nav{
     background: #63D1F4;
     color:white;
     padding: 1% 17.5%;
+}
+#link-more{
+    text-align: center;
+    font-size:2rem;
+    text-transform: uppercase;
+    font-family: 'Mukta', sans-serif;
+    padding: 1% 0;
+}
+#link-more button{
+    color:#63D1F4;
+    font-size:2rem;
+    text-transform: uppercase;
+    font-family: 'Mukta', sans-serif;
+    cursor: pointer;
+    border:none;
+    text-decoration: none;
+}
+/* PROJECTS MODAL */
+.modal-hidden{
+    display:none;
+    height:0;
+}
+.projects-modal{
+    z-index: 1;
+    padding-bottom: 3%;
+    background:white;
+    background: rgb(240, 237, 237);
+}
+.projects-modal .modal-heading{
+    font-size:2rem;
+    text-align:center;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(130, 130, 130);
+}
+.projects-list{
+    display:flex;
+    margin: 1% 20%;
+    flex-flow: column;
+    list-style: none;
+}
+.projects-list li{
+    padding:1%;
+    background: white;
+    justify-content: space-between;
+    align-items:center;
+    display:flex;
+}
+.projects-list h2{
+    font-family: 'Mukta', sans-serif;
+}
+.projects-list li a{
+    font-size:2rem;
+    margin-right: 3%;
+    color:#63D1F4;
+}
+.projects-list p{
+    font-size:1rem;
+    font-family: 'Poppins', sans-serif;
+    margin:0;
 }
 
 /* CONTACTS */
