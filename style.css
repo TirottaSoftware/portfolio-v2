@@ -20,7 +20,8 @@
     margin: 0;
     padding: 0;
     font-family: var(--font-primary);
-    /* outline: 1px dotted white; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 html{
     scroll-behavior: smooth;
@@ -170,7 +171,10 @@ nav ul li:hover{
 /* Hero */
 
 .hero{
-    background-image: url('./img/hero.jpg');
+    background-image: url('./img/hero.jpg'); 
+        -o-background-size: cover;
+      -moz-background-size: cover;
+    -webkit-background-size:cover;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
