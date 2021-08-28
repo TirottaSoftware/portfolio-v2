@@ -3,180 +3,184 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Mukta:wght@300&family=Nunito+Sans:wght@600&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&family=Montserrat&family=Mulish:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Cristian Tirotta</title>
 </head>
 <body>
     <nav>
-        <li id = "logo">Cristian Tirotta</li>
-        <div class="nav-links">
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#portfolio-section">Portfolio</a></li>
-            <li><a href="#contacts">Contacts</a></li>
-            <div class="burger">
-                <div class="burger-line"></div>
-                <div class="burger-line"></div>
-                <div class="burger-line"></div>
-            </div>
-        </div>
-        <div class="sidebar hidden">
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#portfolio-section">Portfolio</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+        <a href = "#"><h1>Cristian Tirotta</h1></a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <i class="fas fa-ellipsis-h"></i>
         </div>
     </nav>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
     <div class="hero">
-        <div class="color-overlay"></div>
-        <div class="hero-text">
-            <div class="title">
-                <div class="greeting">
-                    <p>Hello there</p>
-                    <div class="line"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-info">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <h4>Hello there</h4>
+                        <div class="line"></div>
+                    </div>
+                    <h2>My name is Cristian.</h2>
+                    <h2>I am a web developer.</h2>
                 </div>
-                <h1>My name is Cristian.</h1>
-                <h1>I am a web developer.</h1>
-            </div>
-            <div class="links">
-                <a href="#portfolio-section">Projects</a>
-                <a href="#about-section">About me</a>
+                <div class="hero-cta">
+                    <a href="#about">About Me</a>
+                    <a href="#portfolio">My Work</a>
+                </div>
             </div>
         </div>
     </div>
-<div id="about-section"></div>
-    <div class="about">
-        <div class="section-title">
-            <h5>about</h5>
-            <h1>Personal Info</h1>
-            <p>a little more about me</p>
-        </div>
+    <section id = "about">
+        <h2 class="section-name">about</h2>
+        <h3 class="section-title">Personal Info</h3>
+        <h4 class="section-subtitle">a little more about me</h4>
+
         <div class="about-container">
             <div class="about-info">
-                <h3>Greetings!</h3>
-                My name is Cristian Tirotta. I am a self-taught developer who found his passion in programming back in January 2018. Since then, I've been learning & practicing various software technologies and creating different kinds of applications.
+                <h4>Greetings.</h4>
+                <p>My name is Cristian Tirotta. I am a self-taught developer who found his passion in programming back in January 2018. Since then, I've been learning & practicing various software technologies and creating different kinds of applications.</p>
             </div>
-            <div class="about-experience">
-                <h3>Experience</h3>
-                <div class="skills-container">
-                    <div class="skill-card">C#</div>
-                    <div class="skill-card">SQL</div>
-                    <div class="skill-card">ASP.NET Core</div>
-                    <div class="skill-card">JavaScript</div>
-                    <div class="skill-card">ReactJS</div>
-                    <div class="skill-card">HTML</div>
-                    <div class="skill-card">CSS</div>
+            <div class="about-exp">
+                <h4>Experience</h4>
+                <div class="exp-card-container">
+                    <div class="exp-card">HTML</div>
+                    <div class="exp-card">CSS</div>
+                    <div class="exp-card">JavaScript</div>
+                    <div class="exp-card">NodeJS</div>
+                    <div class="exp-card">ReactJS</div>
+                    <div class="exp-card">MySQL</div>
+                    <div class="exp-card">C#</div>
+                    <div class="exp-card">ASP.NET Core</div>
+                    <div class="exp-card">SQL</div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section id="portfolio">
+        <h2 class="section-name">portfolio</h2>
+        <h3 class="section-title">Latest Projects</h3>
+        <h4 class="section-subtitle">Here you can find most of my recent work.</h4>
 
-    <div id="portfolio-section"></div>
-    <div class="portfolio">
-        <div class="section-title">
-            <h5>portfolio</h5>
-            <h1>Latest Projects</h1>
-            <p>Here you can find a part my recent work.</p>
-        </div>
-        <div class="project-container">
-            <div class="project-card">
-                <img src = "/img/movie-app.PNG" />
-                <h1>Tirotta's movie app</h1>
-                <p>
-                    A movie library Application using TMDB's API to programmatically fetch movie data. Made with ReactJS.
-                </p>
-                <div class="card-links">
-                    <a href = "https://tirottasoftware.github.io/tirottas-movie-app/" target = "blank">DEMO</a>
-                    <a href = "https://github.com/TirottaSoftware/tirottas-movie-app.git" target = "blank"> CODE</a>
+        <div class="portfolio-container">
+            <div id = 'pc-1' class="portfolio-card">
+                <h2>Tirotta's Movie App</h2>
+                <img id = 'pci-1' src="./img/mockuper/mockuper-tma.png" alt="Tirotta's Movie App">
+                <p>A movie library Application using TMDB's API to programmatically fetch movie data.</p>
+                <div id = "m-1" class="middle">
+                    <div class="project-technologies">
+                        <div class="exp-card">HTML</div>
+                        <div class="exp-card">CSS</div>
+                        <div class="exp-card">JavaScript</div>
+                        <div class="exp-card">Node</div>
+                        <div class="exp-card">React</div>
+                        <div class="exp-card">MySQL</div>
+                    </div>
+                    <div class="project-cta">
+                        <a href="https://fervent-bohr-bd671c.netlify.app/" target="_blank">Demo</a>
+                        <a href="https://github.com/TirottaSoftware/movie-app-remaster" target="_blank">Code</a>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <img src = "/img/trt-store.PNG" />
-                <h1>TRT Footstore</h1>
-                <p>
-                    A full-stack E-commerce Sneakers store application made with PHP, MySQL and jQuery.
-                </p>
-                <div class="card-links">
-                    <a href = "http://footshop-trt.freecluster.eu/" target = "_blank"> DEMO</a>
-                    <a href = "https://github.com/TirottaSoftware/footshop-trt" target = "_blank"> CODE</a>
+            <div id = 'pc-2' class="portfolio-card">
+                <h2>TRT Footstore</h2>
+                <img id = 'pci-2' src="./img/mockuper/mockuper-trt.png" alt="Tirotta's Movie App">
+                <p>A full-stack E-commerce Sneakers store application with included Authentication & Authorisation.</p>
+                <div id = "m-2" class="middle">
+                    <div class="project-technologies">
+                        <div class="exp-card">HTML</div>
+                        <div class="exp-card">CSS</div>
+                        <div class="exp-card">JavaScript</div>
+                        <div class="exp-card">PHP</div>
+                        <div class="exp-card">jQuery</div>
+                        <div class="exp-card">MySQL</div>
+                    </div>
+                    <div class="project-cta">
+                        <a href="http://footshop-trt.freecluster.eu/" target = "_blank" >Demo</a>
+                        <a href = "https://github.com/TirottaSoftware/footshop-trt" target = "_blank">Code</a>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <img src = "/img/tirotta-planner.PNG" />
-                <h1>Tirotta Planner</h1>
-                <p>
-                    A full stack Todo application, remastered version of Tirotta's Todo App. Suitable for people who struggle with task management & organisation.
-                </p>
-                <div class="card-links">
-                    <a href = "https://suspicious-roentgen-b8ea00.netlify.app/" target = "_blank"> DEMO</a>
-                    <a href = "https://github.com/TirottaSoftware/tirottaplanner" target = "_blank"> CODE</a>
+            <div id = 'pc-3' class="portfolio-card">
+                <h2>Tirotta Planner</h2>
+                <img id = 'pci-3' src="./img/mockuper/mockuper-tp.png" alt="Tirotta's Movie App">
+                <p>A full stack Todo application, remastered version of Tirotta's Todo App. Suitable for people who struggle with task management & organisation.</p>
+                <div id = "m-3" class="middle">
+                    <div class="project-technologies">
+                        <div class="exp-card">HTML</div>
+                        <div class="exp-card">CSS</div>
+                        <div class="exp-card">JavaScript</div>
+                        <div class="exp-card">Node</div>
+                        <div class="exp-card">React</div>
+                        <div class="exp-card">MySQL</div>
+                    </div>
+                    <div class="project-cta">
+                        <a href = "https://suspicious-roentgen-b8ea00.netlify.app/" target = "_blank">Demo</a>
+                        <a href = "https://github.com/TirottaSoftware/tirottaplanner" target = "_blank">Code</a>
+                    </div>
                 </div>
             </div>
-            <div class="project-card">
-                <img src = "/img/tech-tirotta-asp.PNG" />
-                <h1>Tirotta Tech</h1>
-                <p>
-                    A hardware store e-commerce application made with ASP.NET Core 5.0, SQL and Entity Framework. Deployed via Azure.
-                </p>
-                <div class="card-links">
-                    <a href="https://tirottatech.azurewebsites.net/" target="_blank">DEMO</a>
-                    <a href="https://github.com/TirottaSoftware/Tirotta-Tech/tree/master/TirottaTech" target = "_blank">CODE</a>
+            <div id = 'pc-4' class="portfolio-card">
+                <h2>Tirotta Tech</h2>
+                <img id = 'pci-4' src="./img/mockuper/mockuper-tirotta-tech.png" alt="Tirotta's Movie App">
+                <p>A hardware store e-commerce application made with ASP.NET Core 5.0. Deployed via Azure.</p>
+                <div id = "m-4" class="middle">
+                    <div class="project-technologies">
+                        <div class="exp-card">HTML</div>
+                        <div class="exp-card">CSS</div>
+                        <div class="exp-card">ASP.NET Core</div>
+                        <div class="exp-card">SQL</div>
+                        <div class="exp-card">EF Core</div>
+                    </div>
+                    <div class="project-cta">
+                        <a href="https://tirottatech.azurewebsites.net/" target="_blank">Demo</a>
+                        <a href="https://github.com/TirottaSoftware/Tirotta-Tech/tree/master/TirottaTech" target = "_blank">Code</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <h5 id = "link-more"><button id = "link-more-btn">see more→</button></h5>
-        <div class="projects-modal modal-hidden">
-            <p class="modal-heading">More Github activity</p>
-            <ul class = "projects-list">
-                <li>
-                    <div>
-                        <h2>TGallery</h2>
-                        <p class = "modal-project-desc">Simple Gallery application using unsplash's API to fetch and display image data.</p>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <img src="./img/contact-bg.jpg" alt="Welcoming background">
+            <div class="contact-form-container">
+                <h2 class="section-name">contact</h2>
+                <h3 class="section-title">Get in touch</h3>
+                <form action="https://formsubmit.co/cristiantirotta@gmail.com" method="POST" >
+                    <input type="email" name="email" placeholder="Email" required/>
+                    <input type="text" name="_subject" placeholder="Subject"/>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://mail.google.com/mail/u/0/#inbox">
+                    <textarea name="message" rows="10" placeholder="Your message..." required ></textarea>
+                    <div class="form-submit">
+                        <div class="social-links">
+                            <a href = "https://www.instagram.com/tirotta_sw"><i class="fab fa-instagram"></i></a>
+                            <a href = "https://www.linkedin.com/in/cristian-tirotta-61a248201/"><i class="fab fa-linkedin"></i></a>
+                            <a href=  "https://github.com/TirottaSoftware"><i class="fab fa-github"></i></a>
+                        </div>
+                        <input type="submit" />
                     </div>
-                    <a href = "https://github.com/TirottaSoftware/tgallery" target = "_blank"><i class = "fab fa-github"></i></a>
-                </li>
-                <li>
-                    <div>
-                        <h2>Optihealth</h2>
-                        <p class = "modal-project-desc">A full demo-website based on a nutrition & fitness company.</p>
-                    </div>
-                    <a href = "https://github.com/TirottaSoftware/optihealth" target = "_blank"><i class = "fab fa-github"></i></a>
-                </li>
-                <li>
-                    <div>
-                        <h2>Tirotta's Pomodoro App</h2>
-                        <p class = "modal-project-desc">One of my first attempts for a pomodoro app.</p>
-                    </div>
-                    <a href = "https://github.com/TirottaSoftware/tirottas-pomodoro-app" target = "_blank"><i class = "fab fa-github"></i></a>
-                </li>
-                <li>
-                    <div>
-                        <h2>Udemy React Practice</h2>
-                        <p class = "modal-project-desc">React practice projects guided by Maximilian Schwarzmüller's React course on Udemy </p>
-                    </div>
-                    <a href = "https://github.com/TirottaSoftware/udemy-react" target = "_blank"><i class = "fab fa-github"></i></a>
-                </li>
-            </ul>
+                </form>
+            </div>
         </div>
-    </div>
-    <footer class="footer-translated">
-        <div id ="contacts" class="section-title">
-            <h5>contact</h5>
-            <p>Here is my contact info. Feel free to send me a mail or call me anytime</p>
-        </div>
-        <div class="social-links">
-            <a href = "https://www.instagram.com/tirotta_sw" target = "_blank"><i class = "fab fa-instagram"></i></a>
-            <a href = "https://www.linkedin.com/in/cristian-tirotta-61a248201/" target = "_blank"><i class = "fab fa-linkedin"></i></a>
-            <a href = "https://github.com/TirottaSoftware" target = "_blank"><i class = "fab fa-github"></i></a>
-        </div>
-        <div class="contacts">
-            <p><i class = "fas fa-phone"></i> +359 878 112 269</p>
-            <p><i class = "fas fa-envelope"></i> cristiantirotta@gmail.com</p>
-        </div>
-        
-    </footer>
+    </section>
 </body>
+<script src="./scripts.js"></script>
 </html>
-<script src="/script.js"></script>
