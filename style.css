@@ -171,7 +171,7 @@ nav ul li:hover{
 /* Hero */
 
 .hero{
-    background-image: url('./img/hero.png'); 
+    background-image: url('./img/hero.jpg'); 
         -o-background-size: cover;
       -moz-background-size: cover;
     -webkit-background-size:cover;
