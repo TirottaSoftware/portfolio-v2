@@ -427,6 +427,10 @@ nav ul li:hover{
     color: white;
     border: none;
 }
+.calendly-blue{
+    color: var(--color-primary);
+    text-decoration: underline;
+}
 
 @media screen and (max-width: 1366px) {
     .hero-info{
