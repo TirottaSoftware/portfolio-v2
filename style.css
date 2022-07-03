@@ -536,4 +536,27 @@ nav ul li:hover{
         width: 90%;
         margin: auto;
     }
+    .exp-card-container{
+        justify-content: center;
+    }
+}
+
+.images-container{
+    width: 100%;
+}
+.back{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-back{
+    background: var(--color-primary);
+    color: white;
+    cursor: pointer;
+    margin-top: 1%;
+    padding: 20px 40px;
+    font-size: 14px;
+    border: none;
+    text-align: center;
 }
