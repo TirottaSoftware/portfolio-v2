@@ -14,6 +14,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
     <title>Cristian Tirotta</title>
   </head>
   <body>
@@ -335,9 +339,11 @@
       <h4 class="section-subtitle">
         Click
         <span class="calendly-blue">
-          <a target="_blank" href="https://calendly.com/cristiantirotta">
-            here
-          </a>
+          <a
+            href=""
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/cristiantirotta?hide_landing_page_details=1&hide_gdpr_banner=1&text_color=000000&primary_color=63d1f4'});return false;"
+            >here</a
+          >
         </span>
         to schedule a One-on-One Meeting with me
       </h4>
@@ -352,5 +358,10 @@
       </h4>
     </section>
   </body>
-  <script src="./scripts.js"></script>
 </html>
+<script src="./scripts.js"></script>
+<script
+  src="https://assets.calendly.com/assets/external/widget.js"
+  type="text/javascript"
+  async
+></script>
